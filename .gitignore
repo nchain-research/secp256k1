@@ -50,6 +50,9 @@ coverage.*.html
 !/autotools-aux/m4/bitcoin_secp.m4
 
 libsecp256k1.pc
+secp256k1-config.h
+secp256k1-config.h.in
+stamp-h1
 
 ### CMake
 /CMakeUserPresets.json
