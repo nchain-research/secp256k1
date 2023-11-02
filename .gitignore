@@ -59,6 +59,9 @@ build-aux/missing
 build-aux/compile
 build-aux/test-driver
 libsecp256k1.pc
+secp256k1-config.h
+secp256k1-config.h.in
+stamp-h1
 
 ### CMake
 /CMakeUserPresets.json
