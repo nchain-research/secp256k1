@@ -35,7 +35,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
-option(BUILD_SHARED_LIBS "Build shared libraries." ON)
+option(BUILD_SHARED_LIBS "Build shared libraries." OFF)
 option(SECP256K1_DISABLE_SHARED "Disable shared library. Overrides BUILD_SHARED_LIBS." OFF)
 if(SECP256K1_DISABLE_SHARED)
   set(BUILD_SHARED_LIBS OFF)
@@ -48,10 +48,10 @@ option(SECP256K1_INSTALL "Enable installation." ${PROJECT_IS_TOP_LEVEL})
 # We declare all options before processing them, to make sure we can express
 # dependendencies while processing.
 option(SECP256K1_ENABLE_MODULE_ECDH "Enable ECDH module." ON)
-option(SECP256K1_ENABLE_MODULE_RECOVERY "Enable ECDSA pubkey recovery module." OFF)
-option(SECP256K1_ENABLE_MODULE_EXTRAKEYS "Enable extrakeys module." ON)
-option(SECP256K1_ENABLE_MODULE_SCHNORRSIG "Enable schnorrsig module." ON)
-option(SECP256K1_ENABLE_MODULE_ELLSWIFT "Enable ElligatorSwift module." ON)
+option(SECP256K1_ENABLE_MODULE_RECOVERY "Enable ECDSA pubkey recovery module." ON)
+option(SECP256K1_ENABLE_MODULE_EXTRAKEYS "Enable extrakeys module." OFF)
+option(SECP256K1_ENABLE_MODULE_SCHNORRSIG "Enable schnorrsig module." OFF)
+option(SECP256K1_ENABLE_MODULE_ELLSWIFT "Enable ElligatorSwift module." OFF)
 
 # Processing must be done in a topological sorting of the dependency graph
 # (dependent module first).
