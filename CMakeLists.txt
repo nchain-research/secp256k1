@@ -35,7 +35,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 # Configurable options
 #=============================
 if(libsecp256k1_IS_TOP_LEVEL)
-  option(BUILD_SHARED_LIBS "Build shared libraries." ON)
+  option(BUILD_SHARED_LIBS "Build shared libraries." OFF)
 endif()
 
 option(SECP256K1_INSTALL "Enable installation." ${PROJECT_IS_TOP_LEVEL})
@@ -47,12 +47,12 @@ option(SECP256K1_ENABLE_API_VISIBILITY_ATTRIBUTES "Enable visibility attributes 
 # We declare all options before processing them, to make sure we can express
 # dependencies while processing.
 option(SECP256K1_ENABLE_MODULE_ECDH "Enable ECDH module." ON)
-option(SECP256K1_ENABLE_MODULE_RECOVERY "Enable ECDSA pubkey recovery module." OFF)
-option(SECP256K1_ENABLE_MODULE_EXTRAKEYS "Enable extrakeys module." ON)
-option(SECP256K1_ENABLE_MODULE_SCHNORRSIG "Enable schnorrsig module." ON)
-option(SECP256K1_ENABLE_MODULE_MUSIG "Enable musig module." ON)
-option(SECP256K1_ENABLE_MODULE_ELLSWIFT "Enable ElligatorSwift module." ON)
-option(SECP256K1_ENABLE_MODULE_SILENTPAYMENTS "Enable Silent Payments module." ON)
+option(SECP256K1_ENABLE_MODULE_RECOVERY "Enable ECDSA pubkey recovery module." ON)
+option(SECP256K1_ENABLE_MODULE_EXTRAKEYS "Enable extrakeys module." OFF)
+option(SECP256K1_ENABLE_MODULE_SCHNORRSIG "Enable schnorrsig module." OFF)
+option(SECP256K1_ENABLE_MODULE_MUSIG "Enable musig module." OFF)
+option(SECP256K1_ENABLE_MODULE_ELLSWIFT "Enable ElligatorSwift module." OFF)
+option(SECP256K1_ENABLE_MODULE_SILENTPAYMENTS "Enable Silent Payments module." OFF)
 
 option(SECP256K1_USE_EXTERNAL_DEFAULT_CALLBACKS "Enable external default callback functions." OFF)
 if(SECP256K1_USE_EXTERNAL_DEFAULT_CALLBACKS)
