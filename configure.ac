@@ -178,24 +178,24 @@ AC_ARG_ENABLE(module_recovery,
     [SECP_SET_DEFAULT([enable_module_recovery], [no], [yes])])
 
 AC_ARG_ENABLE(module_extrakeys,
-    AS_HELP_STRING([--enable-module-extrakeys],[enable extrakeys module [default=yes]]), [],
-    [SECP_SET_DEFAULT([enable_module_extrakeys], [yes], [yes])])
+    AS_HELP_STRING([--enable-module-extrakeys],[enable extrakeys module [default=no]]), [],
+    [SECP_SET_DEFAULT([enable_module_extrakeys], [no], [yes])])
 
 AC_ARG_ENABLE(module_schnorrsig,
-    AS_HELP_STRING([--enable-module-schnorrsig],[enable schnorrsig module [default=yes]]), [],
-    [SECP_SET_DEFAULT([enable_module_schnorrsig], [yes], [yes])])
+    AS_HELP_STRING([--enable-module-schnorrsig],[enable schnorrsig module [default=no]]), [],
+    [SECP_SET_DEFAULT([enable_module_schnorrsig], [no], [yes])])
 
 AC_ARG_ENABLE(module_musig,
-    AS_HELP_STRING([--enable-module-musig],[enable MuSig2 module [default=yes]]), [],
-    [SECP_SET_DEFAULT([enable_module_musig], [yes], [yes])])
+    AS_HELP_STRING([--enable-module-musig],[enable MuSig2 module [default=no]]), [],
+    [SECP_SET_DEFAULT([enable_module_musig], [no], [yes])])
 
 AC_ARG_ENABLE(module_ellswift,
-    AS_HELP_STRING([--enable-module-ellswift],[enable ElligatorSwift module [default=yes]]), [],
-    [SECP_SET_DEFAULT([enable_module_ellswift], [yes], [yes])])
+    AS_HELP_STRING([--enable-module-ellswift],[enable ElligatorSwift module [default=no]]), [],
+    [SECP_SET_DEFAULT([enable_module_ellswift], [no], [yes])])
 
 AC_ARG_ENABLE(module_silentpayments,
-    AS_HELP_STRING([--enable-module-silentpayments],[enable Silent Payments module [default=yes]]), [],
-    [SECP_SET_DEFAULT([enable_module_silentpayments], [yes], [yes])])
+    AS_HELP_STRING([--enable-module-silentpayments],[enable Silent Payments module [default=no]]), [],
+    [SECP_SET_DEFAULT([enable_module_silentpayments], [no], [yes])])
 
 AC_ARG_ENABLE(external_default_callbacks,
     AS_HELP_STRING([--enable-external-default-callbacks],[enable external default callback functions [default=no]]), [],
